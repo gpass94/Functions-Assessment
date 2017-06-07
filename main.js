@@ -21,7 +21,7 @@ function maxOfThree(num1, num2, num3){
     // Your answer here
 if (num1 > num2 || num1 > num3){
   return num1;}
-  else if (num2 > num1 || num2 > num3)
+  else if (num2 > num1 || num2 > num3) {
   return num2;}
   else if (num3 > num1 || num3 > num2) {
   return num3;
@@ -67,8 +67,8 @@ function avg(num1, num2, num3) {
 // 6.
 // Write a function called `getLength` that takes one parameter (a string) and returns the length
 // A:
-function getLength (string1){
-  return length;
+function getLength (value){
+  return value.length;
 }
 
 
@@ -85,7 +85,7 @@ var evaluateGreaterThan = function(num1, num2) {
   }
 }
 
-console.assert(evaluateGreaterThan(1, 2) === true);
+
 
 
 
@@ -96,10 +96,10 @@ console.assert(evaluateGreaterThan(1, 2) === true);
 // is formated like "Hello, Name!" where *Name*
 // is the parameter that was passed in.
 // A:
-function greet("Hello,Name!") {
-
+function greet(name) {
+  return "Hello "+ name
 }
-
+console.log(greet("Grant"));
 
 // 9.
 // Write a function called `madlib` that takes 4 or more parameters (words).
@@ -109,3 +109,9 @@ function greet("Hello,Name!") {
 // words: "quick", "fox", "fence"
 // sentence: "quick brown fox jumps over the fence"
 // A:
+function madlib(word1, word2, word3, word4, word5){
+  return "The "+ word1 + " added "+ word2 + " our "+ word3 +" help "+ word4 + " these "+ word5 +" ."
+
+}
+
+console.log(madlib("words", "to","lesson", "solve", "functions"));
